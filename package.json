@@ -1,0 +1,22 @@
+{
+  "name": "raspbian-wifi-manager",
+  "version": "0.0.1",
+  "description": "Node.js wifi manager for raspbian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node", "raspbian", "wifi", "wpa_supplicant", "wpa_cli", "iwlist", "manager", "raspberry pi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemaalfaya/raspbian-wifi-manager.git"
+  },
+  "author": {
+    "name": "Chema Alfaya Montero",
+    "email": "chemaalfaya@gmail.com",
+    "url": "http://www.chemaalfaya.com"
+  },
+  "license": "ISC"
+}
