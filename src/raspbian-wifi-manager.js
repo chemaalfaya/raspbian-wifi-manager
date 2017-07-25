@@ -41,6 +41,15 @@ RaspbianWifiManager.prototype.scan = function (callback, interface) {
 	}, interface);
 }
 
+RaspbianWifiManager.prototype.clearNetworks = function(callback) {
+        if (!this.wpaSupplicantServiceInitiated) {
+                setTimeout(self.clearNetworks.bind(null, callback), 1000);
+        } else {
+          this.wpasup.setNetworks([]); 
+          callback();
+        }
+}
+
 RaspbianWifiManager.prototype.addWpaDhcpNetwork = function (ssid, password, callback, bssid) {
 	if (!this.wpaSupplicantServiceInitiated) {
 		setTimeout(self.addWpaDhcpNetwork.bind(null, ssid, password, callback, bssid), 1000);
